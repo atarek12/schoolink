@@ -1,0 +1,28 @@
+module.exports = {
+  root: true,
+  env: { browser: true, es2020: true },
+  extends: [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:prettier/recommended",
+  ],
+  ignorePatterns: ["dist", ".eslintrc.cjs"],
+  parser: "@typescript-eslint/parser",
+  plugins: ["react-refresh", "prettier"],
+  rules: {
+    "react-refresh/only-export-components": ["off"],
+    "no-empty-pattern": "off",
+    "@typescript-eslint/no-unused-vars": "warn",
+    "@typescript-eslint/ban-ts-comment": "off",
+    "@typescript-eslint/no-empty-function": "off",
+    "@typescript-eslint/no-non-null-assertion": "off",
+    "@typescript-eslint/no-empty-interface": "off",
+    "@typescript-eslint/no-non-null-asserted-optional-chain": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "no-empty-pattern": "off",
+    "no-console": "warn",
+    "no-unused-vars": ["warn", { args: "none" }],
+    "prettier/prettier": ["warn", { endOfLine: "auto", arrowParens: "always" }],
+  },
+};
